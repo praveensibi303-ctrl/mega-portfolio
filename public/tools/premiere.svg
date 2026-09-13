@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128" role="img" aria-label="Adobe Premiere Pro">
+  <defs>
+    <linearGradient id="prBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4B1878"/>
+      <stop offset="100%" stop-color="#2A0A45"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="26" fill="url(#prBg)"/>
+  <rect x="8" y="8" width="112" height="112" rx="26" fill="none" stroke="#9B6BD6" stroke-opacity="0.35" stroke-width="1.5"/>
+  <text x="64" y="63" text-anchor="middle" dominant-baseline="central"
+        font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="58" fill="#E8A6FF">Pr</text>
+</svg>

@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Hide the default scrollbar (Firefox) — the top nav bar shows progress */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  /* Hide the default scrollbar (Chrome, Safari, Edge) */
+  html::-webkit-scrollbar,
+  body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  body {
+    @apply bg-ink text-neutral-300 font-sans antialiased;
+  }
+  ::selection {
+    @apply bg-gold/30 text-white;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.25em] text-gold;
+  }
+  .btn-gold {
+    @apply inline-flex items-center justify-center rounded-full bg-gold px-6 py-3 text-sm font-semibold text-ink transition hover:bg-goldsoft;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-full border border-line px-6 py-3 text-sm font-semibold text-neutral-200 transition hover:border-gold hover:text-gold;
+  }
+  .card {
+    @apply rounded-2xl border border-line bg-panel/70 backdrop-blur;
+  }
+}
+
+/* Reveal-on-scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Subtle film-grain / vignette backdrop */
+.bg-grid {
+  background-image: radial-gradient(
+      circle at 20% 10%,
+      rgba(233, 184, 114, 0.08),
+      transparent 40%
+    ),
+    radial-gradient(circle at 85% 0%, rgba(233, 184, 114, 0.05), transparent 45%);
+}
+
+/* Hide scrollbar on the filter row */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Starfield (Splash + Hero) */
+.star {
+  position: absolute;
+  border-radius: 9999px;
+  opacity: 0.4;
+  animation-name: twinkle;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes twinkle {
+  0%, 100% { opacity: 0.12; transform: scale(0.8); }
+  50%      { opacity: 0.9;  transform: scale(1.15); }
+}
+
+/* Splash intro animations */
+.splash-logo {
+  animation: logoIn 1.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes logoIn {
+  from { opacity: 0; transform: scale(0.9); filter: blur(8px); }
+  to   { opacity: 1; transform: none;       filter: none; }
+}
+.splash-eyebrow {
+  animation: fadeUp 1s ease 0.2s both;
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .star, .splash-logo, .splash-eyebrow { animation: none !important; }
+}
