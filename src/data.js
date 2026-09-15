@@ -4,7 +4,7 @@
 
 // ---- BRAND / IDENTITY --------------------------------------
 export const brand = {
-  name: "Varma Media Creations",
+  name: "Varma Visuals",
   editor: "Megavarman",
   role: "Freelance Video Editor",
 
