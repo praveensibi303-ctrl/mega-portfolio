@@ -2,26 +2,123 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO -->
+    <title>Varman Visuals — Freelance Video Editor | Real Estate, Promo &amp; Event Videos</title>
     <meta
       name="description"
-      content="Varma Media Creations — Freelance Video Editor. Real estate, promotional, testimonial and corporate event editing. Raw footage in, finished story out."
+      content="Varman Visuals — freelance video editor Megavarman. 6+ years editing real estate walkthroughs, brand promos, testimonials, corporate events and Reels in Premiere Pro &amp; After Effects. Fast turnaround, available worldwide."
     />
+    <meta name="keywords" content="Varman Visuals, freelance video editor, real estate video editing, promotional video editor, corporate event video editing, testimonial video editing, reels editor, Premiere Pro editor, After Effects, Megavarman" />
+    <meta name="author" content="Megavarman — Varman Visuals" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://varmanvisuals.com/" />
+
+    <!-- Icons / PWA -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#0a0a0b" />
-    <meta property="og:title" content="Varma Media Creations — Freelance Video Editor" />
-    <meta property="og:description" content="Raw footage in. Story out. Real estate, promo, testimonial & corporate video editing." />
+
+    <!-- Open Graph (WhatsApp, LinkedIn, Facebook) -->
     <meta property="og:type" content="website" />
-    <title>Varma Media Creations — Freelance Video Editor</title>
+    <meta property="og:site_name" content="Varman Visuals" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:url" content="https://varmanvisuals.com/" />
+    <meta property="og:title" content="Varman Visuals — Freelance Video Editor" />
+    <meta property="og:description" content="Raw footage in. Story out. Real estate, promo, testimonial &amp; corporate video editing." />
+    <meta property="og:image" content="https://varmanvisuals.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Varman Visuals logo" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Varman Visuals — Freelance Video Editor" />
+    <meta name="twitter:description" content="Raw footage in. Story out. Real estate, promo, testimonial &amp; corporate video editing." />
+    <meta name="twitter:image" content="https://varmanvisuals.com/og-image.jpg" />
+
+    <!-- Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://dl.dropboxusercontent.com" crossorigin />
+    <link rel="preload" as="image" href="/logo/varman_visuals_logo.webp" type="image/webp" />
     <link
       href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Structured data (Google rich results) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://varmanvisuals.com/#website",
+          "url": "https://varmanvisuals.com/",
+          "name": "Varman Visuals",
+          "inLanguage": "en"
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://varmanvisuals.com/#business",
+          "name": "Varman Visuals",
+          "description": "Freelance video editing for real estate, promotional, testimonial, corporate event and social media videos.",
+          "url": "https://varmanvisuals.com/",
+          "logo": "https://varmanvisuals.com/icon-512.png",
+          "image": "https://varmanvisuals.com/og-image.jpg",
+          "email": "megavarmans18@gmail.com",
+          "telephone": "+91-8754851304",
+          "areaServed": "Worldwide",
+          "address": { "@type": "PostalAddress", "addressCountry": "IN" },
+          "founder": { "@id": "https://varmanvisuals.com/#person" },
+          "knowsAbout": ["Video editing", "Motion graphics", "Color grading", "Adobe Premiere Pro", "Adobe After Effects", "DaVinci Resolve"],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Video Editing Services",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Real Estate Video Editing" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Promotional Video Editing" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Event Highlight Videos" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Testimonial Video Editing" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Social Media Reels Editing" } }
+            ]
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://varmanvisuals.com/#person",
+          "name": "Megavarman",
+          "jobTitle": "Freelance Video Editor",
+          "image": "https://varmanvisuals.com/img/profile1.webp",
+          "worksFor": { "@id": "https://varmanvisuals.com/#business" },
+          "url": "https://varmanvisuals.com/"
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Static fallback for crawlers & link previewers; React replaces it on load. -->
+      <main style="max-width:760px;margin:80px auto;padding:0 16px;color:#ddd;font-family:Inter,system-ui,sans-serif">
+        <h1>Varman Visuals — Freelance Video Editor</h1>
+        <p>I'm Megavarman, a freelance video editor turning raw footage into polished films for creators, brands and businesses.</p>
+        <h2>Services</h2>
+        <ul>
+          <li>Real estate videos — property walkthroughs &amp; drone footage</li>
+          <li>Promotional content &amp; brand campaigns</li>
+          <li>Corporate event highlights</li>
+          <li>Testimonial videos</li>
+          <li>Social media Reels, Shorts &amp; TikTok edits</li>
+        </ul>
+        <p>Tools: Premiere Pro, After Effects, Media Encoder, DaVinci Resolve.</p>
+        <p>Contact: <a href="mailto:megavarmans18@gmail.com" style="color:#e9b872">megavarmans18@gmail.com</a></p>
+      </main>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

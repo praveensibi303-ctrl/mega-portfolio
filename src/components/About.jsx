@@ -38,7 +38,10 @@ export default function About() {
               >
                 <img
                   src={`./tools/${t.icon}.${t.type}`}
-                  alt=""
+                  alt={`${t.name} logo`}
+                  width="32"
+                  height="32"
+                  loading="lazy"
                   className="h-8 w-8 object-contain"
                   onError={(e) => (e.currentTarget.style.visibility = "hidden")}
                 />

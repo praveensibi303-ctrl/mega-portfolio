@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Portfolio — Varma Media Creations · Freelance Video Editor (React + Vite + Tailwind)",
+  "description": "Portfolio — Varman Visuals · Freelance Video Editor (React + Vite + Tailwind)",
   "scripts": {
     "dev": "vite",
     "start": "vite",

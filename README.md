@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-# Varma Media Creations — Portfolio
+# Varman Visuals — Portfolio
 
 A clean, single-page portfolio for **Megavarman**, Freelance Video Editor.
 Built with **React + Vite + Tailwind CSS**.

@@ -12,8 +12,11 @@ export default function Hero() {
       <div className="relative mb-10 flex flex-col items-center text-center">
         <img
           id="hero-logo"
-          src="./logo/varman_visuals_logo.png"
-          alt={brand.name}
+          src="./logo/varman_visuals_logo.webp"
+          alt={`${brand.name} logo`}
+          width="440"
+          height="440"
+          fetchpriority="high"
           className="animate-floaty w-[min(72vw,440px)] drop-shadow-[0_10px_40px_rgba(233,184,114,0.25)]"
         />
       </div>
@@ -22,7 +25,11 @@ export default function Hero() {
         {/* Copy */}
         <div>
           <p className="eyebrow mb-5">{brand.role}</p>
-          <div className="font-display text-xl font-semibold leading-[1.1] text-white sm:text-3xl">
+          <h1 className="font-display text-xl font-semibold leading-[1.1] text-white sm:text-3xl">
+            <span className="sr-only">
+              {brand.name} — {brand.role} for real estate, promotional,
+              testimonial and event videos.{" "}
+            </span>
             {brand.tagline.split(".").map((part, i) =>
               part.trim() ? (
                 <span key={i} className="block">
@@ -31,12 +38,9 @@ export default function Hero() {
                 </span>
               ) : null
             )}
-          </div>
+          </h1>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-neutral-400 sm:text-lg">
             I'm <span className="text-neutral-200">{brand.editor}</span> — {brand.intro}
-          </p>
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-neutral-400 sm:text-lg">
-            {brand.introOne}
           </p>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-neutral-400 sm:text-lg">
             {brand.description}
@@ -83,7 +87,9 @@ function PhotoFrame() {
           {/* Real photo: drop public/profile.jpg and it shows here */}
           <img
             src={brand.photo}
-            alt={brand.editor}
+            alt={`${brand.editor}, freelance video editor`}
+            width="768"
+            height="960"
             onLoad={() => setLoaded(true)}
             onError={(e) => (e.currentTarget.style.display = "none")}
             className="h-full w-full object-cover"
