@@ -4,7 +4,7 @@
 
 // ---- BRAND / IDENTITY --------------------------------------
 export const brand = {
-  name: "Varma Visuals",
+  name: "Varman Visuals",
   editor: "Megavarman",
   role: "Freelance Video Editor",
 
@@ -16,16 +16,16 @@ export const brand = {
   tagline: "I TURN RAW FOOTAGE INTO STORIES WORTH WATCHING.",
 
   intro:
-    "| Video Editor Crafting stories through pacing, emotion, and visual detail.",
+    "Video Editor Crafting stories through pacing, emotion, and detail.",
 
   introOne:
-    "I'm a freelance video editor who transforms raw footage into polished, purposeful films — for creators, brands, and businesses who care about how their story is told.",
+    "I'm Megavarman — Video Editor. Crafting stories through pacing, emotion, and detail.",
 
   description:
-    "My work spans real estate films, brand promotions, testimonials, event coverage, and social media content, always shaped around rhythm, emotional flow, and visual consistency.",
+    "I turn raw footage into polished films for creators, brands, and businesses who care how their story is told — real estate, promos, testimonials, events, and social content.",
 
   closing:
-    "You bring the vision. I bring the craft to shape it into something people remember.",
+    "You bring the vision. I bring the craft.",
 };
 
 // ---- CONTACT / SOCIAL --------------------------------------
@@ -52,13 +52,13 @@ export const services = [
   {
     icon: "building",
     title: "Real Estate Videos",
-    body: "Property walkthroughs and drone footage editing with cinematic color grading to showcase luxury listings.",
+    body: "Property walkthroughs and drone footage, edited with cinematic color grading to showcase luxury listings.",
   },
   {
     icon: "megaphone",
     title: "Promotional Content",
     featured: true,
-    body: "Fast-paced, engaging brand campaigns with motion graphics and dynamic transitions that convert viewers.",
+    body: "Fast-paced, engaging brand campaigns with motion graphics and dynamic transitions built to hold attention.",
   },
   {
     icon: "calendar",
@@ -73,7 +73,7 @@ export const services = [
   {
     icon: "mobile",
     title: "Social Media Reels",
-    body: "Vertical edits optimized for TikTok, Shorts, and Reels with subtitles, fast cuts, and maximum engagement.",
+    body: "Vertical edits optimized for TikTok, Shorts, and Reels — subtitles, fast cuts, and pacing built for maximum engagement.",
   },
 ];
 
@@ -143,9 +143,9 @@ export const packages = [
     featured: true,
     features: [
       "Beat-synced editing & speed ramps",
-      "Smooth transitions",
-      "Audio & Noise cleanup",
-      "Motion titles & Logo branding",
+      "Custom animated transitions",
+      "Audio & noise cleanup",
+      "Motion titles & logo branding",
       "Sound effects & cinematic pacing",
     ],
   },

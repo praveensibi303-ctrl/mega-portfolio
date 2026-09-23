@@ -97,7 +97,6 @@ export default function Contact() {
                 <option>Promotional / brand</option>
                 <option>Event / highlights</option>
                 <option>Testimonial</option>
-                <option>Social / Reels</option>
                 <option>Other</option>
               </select>
             </div>

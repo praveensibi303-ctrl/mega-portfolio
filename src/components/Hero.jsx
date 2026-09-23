@@ -36,9 +36,6 @@ export default function Hero() {
             I'm <span className="text-neutral-200">{brand.editor}</span> — {brand.intro}
           </p>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-neutral-400 sm:text-lg">
-            {brand.introOne}
-          </p>
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-neutral-400 sm:text-lg">
             {brand.description}
           </p>
           <p className="mt-6 max-w-xl text-base leading-relaxed text-neutral-400 sm:text-lg">
