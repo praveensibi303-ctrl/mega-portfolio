@@ -64,15 +64,17 @@ export default function Navbar() {
         />
       </div>
 
-      <nav className="container-x flex h-16 items-center justify-between">
+      <nav aria-label="Main navigation" className="container-x flex h-16 items-center justify-between">
         <a
           href="#top"
           className="flex items-center gap-2"
           aria-label={brand.name}
         >
           <img
-            src="./logo/logonav.png"
-            alt={brand.name}
+            src="./logo/logonav.webp"
+            alt={`${brand.name} logo`}
+            width="284"
+            height="100"
             className={`h-10 w-auto transition-opacity duration-500 ${
               showLogo ? "opacity-100" : "pointer-events-none opacity-0"
             }`}
@@ -97,6 +99,7 @@ export default function Navbar() {
         <button
           className="md:hidden text-neutral-200"
           aria-label="Menu"
+          aria-expanded={open}
           onClick={() => setOpen((o) => !o)}
         >
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none">

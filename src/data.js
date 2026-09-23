@@ -11,7 +11,7 @@ export const brand = {
   // Add your photo to public/profile.jpg
   // photo: "../public/img/profile.jpeg",
   // photo: "../public/img/profile1.png",
-  photo: "/img/profile1.png",
+  photo: "/img/profile1.webp",
 
   tagline: "I TURN RAW FOOTAGE INTO STORIES WORTH WATCHING.",
 
@@ -82,7 +82,7 @@ export const tools = [
   { name: "Premiere Pro", icon: "premiere", type: "svg" },
   { name: "After Effects", icon: "aftereffects", type: "svg" },
   { name: "Media Encoder", icon: "mediaencoder", type: "svg" },
-  { name: "DaVinci Resolve", icon: "davinci", type: "png" },
+  { name: "DaVinci Resolve", icon: "davinci", type: "webp" },
 ];
 
 // ---- PORTFOLIO VIDEOS --------------------------------------
