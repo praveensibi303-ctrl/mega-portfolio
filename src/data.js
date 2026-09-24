@@ -11,7 +11,7 @@ export const brand = {
   // Add your photo to public/profile.jpg
   // photo: "../public/img/profile.jpeg",
   // photo: "../public/img/profile1.png",
-  photo: "/img/profile1.webp",
+  photo: "public/img/profile1.webp",
 
   tagline: "I TURN RAW FOOTAGE INTO STORIES WORTH WATCHING.",
 

@@ -21,8 +21,8 @@ export default function Contact() {
 
   const wa = contact.whatsapp
     ? `https://wa.me/${contact.whatsapp}?text=${encodeURIComponent(
-        "Hi Megavarman, I'd like to discuss a video project."
-      )}`
+      "Hi Megavarman, I'd like to discuss a video project."
+    )}`
     : "";
 
   return (
@@ -92,11 +92,14 @@ export default function Contact() {
                 onChange={onChange}
                 className="w-full rounded-lg border border-line bg-ink/60 px-3 py-2.5 text-sm text-neutral-200 outline-none focus:border-gold"
               >
-                <option value="">Select…</option>
+                <option value="" disabled hidden>
+                  Select option
+                </option>
                 <option>Real estate</option>
                 <option>Promotional / brand</option>
                 <option>Event / highlights</option>
                 <option>Testimonial</option>
+                <option>Social / Reels</option>
                 <option>Other</option>
               </select>
             </div>
